@@ -33,6 +33,10 @@
     padding: 1rem;
 }
 
+.NavBarSeperator {
+    border-left: 1px solid black;
+}
+
 .Main {
     flex: 1 1 auto;
     background-color: gray;

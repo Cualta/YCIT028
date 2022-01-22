@@ -1,3 +1,4 @@
+import { Children } from "react"
 import "./App.styles.css"
 
 export function App() {
@@ -9,6 +10,7 @@ export function App() {
                 <NavBar>
                     <NavBarItem text="Products" />
                     <NavBarItem text="About" />
+                    <NavBarSeperator />
                     <NavBarItem text={isSignedIn ? "Sign out" : "Sign in"} />
                 </NavBar>
             </Header>
@@ -23,6 +25,22 @@ function Header(props) {
 }
 
 function NavBar(props) {
+    // Will work if you are careful
+    // props.children.forEach(child => {
+    // })
+
+    // Robust way to do it
+    Children.forEach(props.children, (child) => {
+        if (
+            // Don't hard code NavBarItem because webpack might change the function name
+            // child.type.name !== "NavBarItem" &&
+            child.type.name !== NavBarItem.name &&
+            child.type.name !== NavBarSeperator.name
+        ) {
+            console.error("HEY! YOU ARE ONLY ALLOWED TO PUT NAV BAR THINGS!!!")
+        }
+    })
+
     return (
         <div className="NavBar">
             <NavBarItem text="Home" />
@@ -37,6 +55,10 @@ function NavBarItem(props) {
             <div className="NavBarItem">{props.text}</div>
         </a>
     )
+}
+
+function NavBarSeperator() {
+    return <span className="NavBarSeperator"></span>
 }
 
 function Main() {
