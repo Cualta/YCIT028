@@ -1,0 +1,62 @@
+body {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+    background: url(./images/background.jpeg) no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin-top: 0;
+}
+.header blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    justify-content: right;
+    display: flex;
+    align-items: baseline;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1rem 0.8rem;
+    padding: 0.8rem;
+    margin: 2rem 3rem;
+}
+
+.card {
+    display: flex;
+    background: rgb(197 159 110 / 81%);
+    /* background: rgb(197, 168, 124, 0.6); */
+    padding: 1rem;
+    border: 2px solid #3e2007;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(62, 32, 6);
+}
+
+.img {
+    /* background: rgb(255, 253, 177, 0.4); */
+    background: rgb(122, 85, 0);
+    max-height: 12rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+.description {
+    flex-direction: column;
+}
