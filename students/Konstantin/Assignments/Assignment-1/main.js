@@ -51,18 +51,15 @@ const carProfiles = [
 
 function MyCar(props) {
     return (
-        (<div>source</div>),
-        (
-            <div className="carCard">
-                <img className="car" src={props.imgUrl}></img>
-                <h2 className="carName">{props.car}</h2>
-                <img className="icon" src="images/gear.png"></img>
-                <h3 className="transmission">{props.transmission}</h3>
-                <img className="icon" src="images/mileage.png"></img>
-                <h3 className="mileage">{props.mileage}</h3>
-                <h1 className="price">{props.price}</h1>
-            </div>
-        )
+        <div className="carCard">
+            <img className="car" src={props.imgUrl}></img>
+            <h2 className="carName">{props.car}</h2>
+            <img className="icon" src="images/gear.png"></img>
+            <h3 className="transmission">{props.transmission}</h3>
+            <img className="icon" src="images/mileage.png"></img>
+            <h3 className="mileage">{props.mileage}</h3>
+            <h1 className="price">{props.price}</h1>
+        </div>
     )
 }
 
