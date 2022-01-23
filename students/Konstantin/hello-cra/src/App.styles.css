@@ -1,0 +1,47 @@
+.App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Header {
+    flex: 0 0 20%;
+    background-color: yellow;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar {
+    display: inline-flex;
+    background-color: crimson;
+    gap: 1em;
+}
+
+.NavBar a {
+    cursor: pointer;
+}
+
+.NavBar a:hover {
+    background-color: yellow;
+    opacity: 80%;
+}
+
+.NavBarItem {
+    padding: 1rem;
+}
+
+.NavBarSeperator {
+    border-left: 1px solid black;
+}
+
+.Main {
+    flex: 1 1 auto;
+    background-color: lightgray;
+}
+
+.Footer {
+    flex: 0 0 10%;
+    background-color: khaki;
+}
