@@ -1,0 +1,14 @@
+.ColorPicker {
+    display: flex;
+    flex-direction: column;
+}
+
+.swatch {
+    display: flex;
+    min-height: 2rem;
+}
+
+.swatch span {
+    border: 1px dashed grey;
+    flex: 1;
+}

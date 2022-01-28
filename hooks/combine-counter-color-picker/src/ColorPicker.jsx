@@ -1,7 +1,7 @@
 import { useState } from "react"
-import "./App.styles.css"
+import "./ColorPicker.styles.css"
 
-export function App() {
+export function ColorPicker() {
     const [color, colorSet] = useState("red")
 
     console.log("Called App, and the color is...", color)
@@ -13,10 +13,10 @@ export function App() {
     }
 
     return (
-        <div className="App">
+        <div className="ColorPicker">
             <div style={{ backgroundColor: color }}>My color app</div>
 
-            <div className="color-picker">
+            <div className="swatch">
                 <span
                     style={{ backgroundColor: "red" }}
                     onClick={handleColorClick}
