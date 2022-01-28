@@ -1,0 +1,14 @@
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-picker {
+    display: flex;
+    min-height: 2rem;
+}
+
+.color-picker span {
+    border: 1px dashed grey;
+    flex: 1;
+}
