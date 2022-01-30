@@ -1,0 +1,13 @@
+button {
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.currentValue {
+    background-color: aquamarine;
+    max-width: 200px;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
