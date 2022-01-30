@@ -1,0 +1,7 @@
+.top-screen-row {
+    max-width: 200px;
+    min-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
