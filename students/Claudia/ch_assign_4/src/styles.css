@@ -24,6 +24,10 @@
     background-color: gray;
 }
 
+.label {
+    display: flex;
+}
+
 .Footer {
     flex: 0 0 10%;
     background-color: blueviolet;
