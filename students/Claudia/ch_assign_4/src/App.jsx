@@ -5,7 +5,7 @@ export function App() {
         <div className="App">
             <h1>To Do list</h1>
             <div className="main">
-                <div className="labels">
+                <div className="Label">
                     <div>Todo</div>
                     <div>Description</div>
                     <div>Date</div>

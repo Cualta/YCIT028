@@ -24,8 +24,10 @@
     background-color: gray;
 }
 
-.label {
+.Label {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .Footer {
